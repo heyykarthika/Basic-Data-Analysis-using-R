@@ -1,0 +1,24 @@
+df=datasets::airquality
+head(df)
+head(df,25)
+tail(df)
+summary(df)
+df$Ozone
+Ozone
+summary(df$Ozone)
+attach(df)
+Ozone
+Month
+plot(x=Ozone,y=Temp)
+plot(Ozone,Wind,xlab="Ozone Levels",ylab = "Wind Values",main="Scatter Plot",col="red",pch=19)
+plot(df)
+barplot(Month)
+unique(Month)
+table(Month)
+fre<-table(Month)
+barplot(fre,col="#389")
+hist(Ozone)
+hist(Temp)
+hist(Wind)
+boxplot(Ozone,col="blue")
+boxplot(df,col=c("#124","#291","#111389","red","pink","orange"))
